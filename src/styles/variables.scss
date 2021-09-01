@@ -1,0 +1,51 @@
+// sidebar
+$menuText: #919CBD;
+// $menuActiveText: #ffffff;//改前
+$menuActiveText: #000;//改后
+// $subMenuActiveText: #ffffff;//改前
+$subMenuActiveText: #000;//改后
+$menuBg: #30343F;
+$topbor: #95abea;
+$menuHover: #494f61;
+$submenuActive: #919CBD;
+// $submenuActive_tit: #478DE4;//改前
+$submenuActive_tit: #fff;//改后
+$swmenuBg: #478DE4;
+$subMenuBg:#919CBD;
+$subMenuHover: #4e5465;
+$sideBarWidth: 210px;
+
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  submenuActive: $submenuActive;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+  submenuActive_tit:$submenuActive_tit
+}
+// 字体相关
+// 加粗
+.fnwei {
+  font-weight: 600;
+}
+// 字体大小
+.fn14 {
+  font-size: 14px;
+}
+.fn16 {
+  font-size: 16px;
+}
+.fn18 {
+  font-size: 18px;
+}
+// 选中状态
+.mtb20 {
+  margin-bottom: 20px;
+}
+.con_main {
+  padding: 0 15px;
+}

@@ -1,0 +1,159 @@
+.el-submenu__icon-arrow{
+  font-size: 18px !important;
+  font-weight: 800 !important;
+}
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+// .el-upload {
+//   input[type="file"] {
+//     display: none !important;
+//   }
+// }
+
+// .el-upload__input {
+//   display: none;
+// }
+
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+.el-range-separator {
+  box-sizing: content-box;
+}
+// 翻页
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  color: #fff;
+  background-color: #1CEDE7;
+}
+//表格自定义样式颜色
+.el-table .warning-row {
+  background: #e8f1f0;
+}
+.el-table .success-row {
+  background: #fafafa;
+}
+.el-table .tableHeader {
+  background: #808080;
+}
+//翻页定位
+#paging {
+  margin-top: 20px;
+}
+.el-checkbox__inner {
+  transform: scale(1.5)
+}
+// 弹窗头部颜色
+.el-dialog__header{
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #e6e6e6;
+}
+.el-dialog {
+  display: flex;
+  flex-direction: column;
+  margin:0 !important;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  max-height:calc(100% - 200px);
+  max-width:calc(100% - 30px);
+}
+.el-dialog .el-dialog__body {
+  flex:1;
+  overflow: auto;
+}
+.el-button{
+  border: 1px solid #cccccc !important;
+}
+// 单选
+.el-radio__input.is-checked+.el-radio__label{
+  color: #1CEDE7;
+}
+//多选
+.el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner{
+  background-color: #1CEDE7;
+    border-color: #1CEDE7;
+}
+.el-checkbox__inner:hover{
+border-color:#1CEDE7;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #1CEDE7;
+  background: #1CEDE7;
+}
+//按钮
+//重置 确认取消
+.el-button--primary {
+  background-color: #1CEDE7;
+  border-color: #1CEDE7;
+}
+.el-button--primary:focus, .el-button--primary:hover{
+  background: #1CEDE7;
+  border-color: #1CEDE7;
+}
+//详情
+.el-button--info {
+  color: #2E35FC;
+  background-color: #E4E5FF;
+  border-color: #E4E5FF;
+}
+.el-button--info:focus, .el-button--info:hover{
+  color: #2E35FC;
+  background: #E4E5FF;
+  border-color: #E4E5FF;
+}
+// 拒单
+.el-button--warning {
+  background-color: #971CFE;
+  border-color: #971CFE;
+}
+.el-button--warning:focus, .el-button--warning:hover{
+  background: #971CFE;
+  border-color: #971CFE;
+}
+//同意
+.el-button--success.is-plain{
+  color: #fff;
+  background-color: #151CE8;
+  border-color: #151CE8;
+}
+.el-button--success.is-plain:focus, .el-button--success.is-plain:hover {
+  color: #fff;
+  background-color: #151CE8;
+  border-color: #151CE8;
+}
+
+//确认入住
+.el-button--success {
+  background-color: #DC1CFF;
+  border-color: #DC1CFF;
+}
+.el-button--success:focus, .el-button--success:hover{
+  background: #DC1CFF;
+  border-color: #DC1CFF;
+}
+//离店
+.el-button--danger {
+  background-color: #FD5555;
+  border-color: #FD5555;
+}
+.el-button--danger:focus, .el-button--danger:hover{
+  background: #FD5555;
+  border-color: #FD5555;
+}
+
+
+

@@ -1,0 +1,302 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./sidebar.scss";
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft Yahei;
+}
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding:10px 15px 15px 15px;
+  background-color: #F4F4F4;
+  border: 1px solid #ebeef5;
+  height: calc(100vh - 40px);
+  overflow: auto;
+}
+// 修改滚动条
+::v-deep ::-webkit-scrollbar-track-piece {
+  //滚动条凹槽的颜色，还可以设置边框属性
+  background-color: #f8f8f8;
+}
+::v-deep ::-webkit-scrollbar {
+  //滚动条的宽度
+  width: 2px;
+  height: 6px;
+}
+::v-deep ::-webkit-scrollbar-thumb {
+  //滚动条的设置
+  background-color: #dddddd;
+  background-clip: padding-box;
+  min-height: 28px;
+}
+::v-deep ::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+// 公会以及主播详情样式
+.td2,.td3 {
+  background: #E8F1F0;
+  font-weight: 400;
+}
+.td4{
+  background: #FAFAFA;
+}
+.vtable {
+  border-spacing: 0;
+  border-collapse: collapse;
+  td {
+    border: 1px solid #eeeef0;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+.ztable{
+  border-spacing: 0;
+  border-collapse: collapse;
+  td {
+    width: 50% !important;
+    border: 1px solid #eeeef0;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+.lh50{
+  line-height: 50px;
+}
+.td1_img_box {
+  height: 150px;
+  margin:0 15px;
+  overflow: hidden;
+  img{
+    object-fit: cover;
+  }
+}
+//顶部导航快捷选择部分
+.marri10{
+  margin-right: 10px !important;
+}
+// 最小高度
+.minhei400{
+  min-height: 400px;
+}
+.linkcard{
+  box-shadow: 0 0 3px rgba($color: #000000, $alpha: .1);
+}
+.linkcard_main_title{
+  color:#0066cc;
+  font-size: 16px;
+  line-height: 30px;
+}
+.linkcard_main_introduce{
+  color: #666;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.popman{
+  width: 460px;
+  height: 320px;
+  overflow: auto;
+  margin-left: 100px;
+}
+.hei320{
+  height: 320px;
+  overflow: auto;
+}
+// 字体颜色
+.fonred{
+  color: red;
+}
+//字体
+.fonwei{
+  font-weight: 900;
+}
+.fon12{
+  font-size: 12px;
+}
+.fon14{
+  font-size: 14px;
+}
+.fon16{
+  font-size: 16px;
+}
+.fon18{
+  font-size: 18px;
+}
+.fon24{
+  font-size: 24px;
+}
+.tc{
+  text-align: center !important;
+}
+.tl{
+  text-align: left !important;
+}
+//文字颜色
+.colblu{
+  color: #0066cc;
+}
+.colred{
+  color: #FF7575;
+}
+// 列表文字颜色
+.col19e{
+  color:#19E44A;
+}
+.col1ce{
+  color: #1CEDE7;
+}
+.col333{
+  color: #333;
+}
+.colf5{
+  color: #F52828;
+}
+.col999{
+  color: #999999;
+}
+.col4b5{
+  color: #4B51FD;
+}
+//间距
+.ti2em{
+  text-indent: 2em;
+}
+.mgle10{
+  margin-left: 10px;
+}
+.mgri10{
+  margin-right: 10px;
+}
+.mgle30{
+  margin-left: 30px;
+}
+.mgtp10{
+  margin-top: 10px;
+}
+.mgbot20{
+  margin-bottom: 20px;
+}
+//弹窗确认按钮居中
+.btncenter{
+  width: 180px;
+  margin: 0 auto;
+}
+//浮动
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+// 分割线
+.line{
+  border-top: 2px solid #ccc;
+}
+// 文字颜色
+.fonclogre{
+  color: #67C23A;
+}
+.fonclored{
+  color: red;
+}
+.foncloblue{
+  color: #409EFF;
+}
+.trhoverF{
+  &:hover{
+    background-color: #F2F2F2;
+  }
+}
+.cp-hand{
+  cursor: pointer;
+}
+.disinb{
+  display: inline-block;
+}
+//表格斑马色
+.el-table .warning-row {
+  background: #FFFFFF;
+}
+.el-table .warning-row999 {
+  color: #999999;
+  background: #FFFFFF;
+}
+.el-table .success-row {
+  background: #F8F9FF;
+}
+.el-table .success-row999 {
+  color: #999999;
+  background: #F8F9FF;
+}
+//头部搜索部分
+.header-box{
+background-color: #fff;
+padding: 15px 15px 0 15px;
+}
+// 表格分页部分
+.main-box{
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 15px;
+}
+//tooltip样式
+.tooltip400{
+  max-width: 400px !important;
+}
+//房间描述 初始化
+#roomDescribe-box *{
+  margin: 0;
+}
